@@ -2,27 +2,27 @@
 
 
 ```js
-let diaDaSemana = prompt("Qual o dia da semana?")
+let diaDaSemana = prompt("Qual o dia da semana?");
 
 if (diaDaSemana == "Sabado") {
-    alert('Bom fim de semana!"')    
+    alert('Bom fim de semana!"');  
   } else if (diaDaSemana == 'Domingo') {
-    alert('Bom fim de semana!"')
+    alert('Bom fim de semana!"');
   } else {
-    alert('Boa semana')
+    alert('Boa semana');
   }
 ```
 
 2) Verifique se um número digitado pelo usuário é positivo ou negativo. Mostre um alerta informando.
 
 ```js
-let numero = prompt("Digite um numero")
+let numero = prompt("Digite um numero");
 
 if (numero >= 0) {
-  alert('Numero Positivo')
+  alert('Numero Positivo');
   
 } else {
-  alert('Numero Negativo')
+  alert('Numero Negativo');
   
 }
 ```
@@ -42,9 +42,9 @@ if (pontuacao >= 100) {
 
 
 ```js
-let saldo = '900'
+let saldo = 900;
 
-alert(`Seu saldo é: R$${Saldo}`)
+alert(`Seu saldo é: R$${Saldo}`);
 ```
 
 5) Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome.
