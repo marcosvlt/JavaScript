@@ -51,7 +51,7 @@ idade = prompt('qualsua idade?')
 10) Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
 
 ```js
-idade = prompt('qualsua idade?')
+let idade = prompt('qualsua idade?')
 
 if (idade >= 18) {
     alert('Pode tirar a habilitação!')    
