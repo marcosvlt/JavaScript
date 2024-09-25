@@ -6,9 +6,12 @@ let attempts = 1;
 
 
 while (guess != secretNumber) {
-    guess = prompt('Choose a number between 1 and 50');
+    guess = prompt('Choose a number between 1 and 50. You have 5 attempts');
     
     if (guess === null){
+      break;
+    }
+    else if (attempts === 6){
       break;
     }
     else if (guess == secretNumber) {
@@ -25,6 +28,7 @@ while (guess != secretNumber) {
 
         attempts++;
     }
+
 }
 
 
