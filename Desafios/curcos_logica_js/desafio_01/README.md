@@ -35,27 +35,27 @@ alert('Erro! Preencha todos os campos');
 
 ```js
 let mensagemDeErro = 'Erro! Preencha todos os campos'
-alert(mensagemDeErro)
+alert(mensagemDeErro);
 ```
 
 8) Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
 
 ```js
-nome = prompt('qual o seu nome?')
+nome = prompt('qual o seu nome?');
 ```
 9) Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
 
 ```js
-idade = prompt('qualsua idade?')
+idade = prompt('qualsua idade?');
 ```
 10) Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
 
 ```js
-let idade = prompt('qualsua idade?')
+let idade = prompt('qualsua idade?');
 
 if (idade >= 18) {
-    alert('Pode tirar a habilitação!')    
+    alert('Pode tirar a habilitação!');    
 } else {
-    alert('Não pode tirar a habilitação!')
+    alert('Não pode tirar a habilitação!');
 }
 ```
