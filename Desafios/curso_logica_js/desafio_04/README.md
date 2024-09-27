@@ -65,15 +65,15 @@ if (idade >= 18) {
 8) Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, negativo ou zero. Use if-else para imprimir a respectiva mensagem.
 
 ```js
-numero = prompt('Digite um numero');
+var numero = parseFloat(prompt("Digite um número:"));
 
-if (numero >= 0) {
-  console.log('Positivo');
-  
+if (numero > 0) {
+    console.log("O número é positivo.");
+} else if (numero < 0) {
+    console.log("O número é negativo.");
 } else {
-  console.log('Negativo');
-  
-};
+    console.log("O número é zero.");
+}
 ```
 9) Use um loop while para imprimir os números de 1 a 10 no console.
 ```js

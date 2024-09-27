@@ -1,12 +1,13 @@
 alert('Welcome to the secret number game');
-let secretNumber = parseInt(Math.random() * 50 + 1);
+let maxnumber = 1000;
+let secretNumber = parseInt(Math.random() * maxnumber + 1);
 console.log(secretNumber);
 let guess;
 let attempts = 1;
 
 
 while (guess != secretNumber) {
-    guess = prompt('Choose a number between 1 and 50. You have 5 attempts');
+    guess = prompt(`Choose a number between 1 and ${maxnumber}. You have 5 attempts`);
     
     if (guess === null){
       break;
