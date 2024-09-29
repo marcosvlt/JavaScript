@@ -1,8 +1,4 @@
-// let titulo = document.querySelector('h1');
-// titulo.innerHTML = 'Jogo do número secreto';
-
-// let paragrafo  = document.querySelector('p');
-// paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
+let numeroSecreto = gerarNumeroAleatorio();
 
 function exibirTexto(tag, texto){
 
@@ -15,7 +11,16 @@ exibirTexto('h1', 'Jogo do número secreto');
 exibirTexto('p', 'Escolha um número entre 1 e 10');
 
 function verificarChute(params) {
-
-    alert('Botão clicado');
+    
+    let chute = document.querySelector('input').value;
     
 };
+
+function gerarNumeroAleatorio() {   
+
+    return parseInt(Math.random() * 10 + 1);
+    
+}
+
+
+console.log(numeroSecreto);
