@@ -1,1 +1,6 @@
-console.log(Math.floor(Math.random() * 10));
+function multiplicação(numero) {
+    return numero * numero;
+    
+};
+
+alert(parseInt(multiplicação(10)));
