@@ -1,4 +1,5 @@
 let numeroSecreto = gerarNumeroAleatorio();
+let tentativas = 1;
 
 function exibirTexto(tag, texto){
 
@@ -7,14 +8,36 @@ function exibirTexto(tag, texto){
 
 };
 
-exibirTexto('h1', 'Jogo do número secreto');
-exibirTexto('p', 'Escolha um número entre 1 e 10');
+function MensagemInicial() {
+    exibirTexto('h1', 'Jogo do número secreto');
+    exibirTexto('p', 'Escolha um número entre 1 e 10');
+    
+}
+
 
 function verificarChute(params) {
     
     let chute = document.querySelector('input').value;
-    
-};
+
+//Código omitido
+
+if (chute == numeroSecreto) {
+    exibirTexto('h1', 'Acertou!');
+    let palavraTentativa = tentativas > 1 ? 'tentativas': 'tentativa';
+    let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`; 
+    exibirTexto('p', mensagemTentativas);
+    document.getElementById('reiniciar').removeAttribute('disabled');
+    } else {
+
+        if (chute > numeroSecreto) {
+            exibirTexto('p', 'O número secreto é menor');
+        } else {
+            exibirTexto('p', 'O número secreto é maior');
+        }
+        tentativas++
+        limparCampo();
+    }
+}
 
 function gerarNumeroAleatorio() {   
 
@@ -22,5 +45,22 @@ function gerarNumeroAleatorio() {
     
 }
 
+function limparCampo() {
+    chute = document.querySelector('input');
+    chute.value = '';
+    
+    
+}
 
+function reiniciarJogo() {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = 1;
+    MensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disabled', true);
+  
+        
+}
+
+MensagemInicial();
 console.log(numeroSecreto);
