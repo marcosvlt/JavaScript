@@ -8,7 +8,6 @@ var listaGenerica = [];
 
 ```js
 var linguagensDeProgramacao = ["JavaScript","C","C++", "Kotlin", "Python"]
-alert(linguagensDeProgramacao)
 ```
 
 3) Adicione à lista linguagensDeProgramacao os seguintes elementos: 'Java', 'Ruby' e 'GoLang'.
