@@ -1,11 +1,2 @@
-function calculaPerimetriRaio(raio) {
-    let area = Math.PI * raio * raio;
-    let perimetro = 2 * Math.PI * raio;
-    
-    console.log(`Área da sala circular: ${area.toFixed(2)} metros quadrados`);
-    console.log(`Perímetro da sala circular: ${perimetro.toFixed(2)} metros`);
-  }
-    
-  let raio = 4;
-  calculaPerimetriRaio(raio);
-  
+var listaNomes = ["João", "Maria","Jose"];
+console.log(listaNomes[listaNomes.length - 1]);

@@ -1,3 +1,5 @@
+let listaNumerosSorteados = [];
+let numeroMaximo = 3;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -19,8 +21,6 @@ function verificarChute(params) {
     
     let chute = document.querySelector('input').value;
 
-//Código omitido
-
 if (chute == numeroSecreto) {
     exibirTexto('h1', 'Acertou!');
     let palavraTentativa = tentativas > 1 ? 'tentativas': 'tentativa';
@@ -41,15 +41,27 @@ if (chute == numeroSecreto) {
 
 function gerarNumeroAleatorio() {   
 
-    return parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroMaximo + 1);
+    let tamanhoLista = listaNumerosSorteados.length;
+
+    if (tamanhoLista == numeroMaximo){
+        listaNumerosSorteados = [];
+    }
+
+    if (listaNumerosSorteados.includes(numeroEscolhido)){
+        return gerarNumeroAleatorio();
+    } else {
+        listaNumerosSorteados.push(numeroEscolhido);
+        console.log(listaNumerosSorteados);
+        return numeroEscolhido
+    }
     
 }
 
 function limparCampo() {
     chute = document.querySelector('input');
     chute.value = '';
-    
-    
+        
 }
 
 function reiniciarJogo() {
@@ -58,8 +70,7 @@ function reiniciarJogo() {
     tentativas = 1;
     MensagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled', true);
-  
-        
+          
 }
 
 MensagemInicial();
