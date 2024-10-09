@@ -1,10 +1,7 @@
-# JavaScript
+# My projects
 
-Sources:
-https://www.w3schools.com/js/DEFAULT.asp
+- Randon number generator:
+https://github.com/marcosvlt/random-number-generator
 
-
-https://www.alura.com.br/
-
-Articles:
-https://dev.to/colelevy/queryselector-vs-getelementbyid-166n
+- Guess the number:
+https://github.com/marcosvlt/guess-the-number
